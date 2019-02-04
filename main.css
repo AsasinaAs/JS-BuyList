@@ -1,9 +1,95 @@
-h1 {
-    color: red;
+.column {
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgba(0, 120, 33, 0.1018);
+	border-radius: 4px;
+	box-shadow: 1px 2px 4px #ACB78E;
+	
+	background-color: white;
 }
 
-.text2018 {
-    color: #ff59c0;
-    font-size: 40px;
-	background-color: green;
+body {
+	background-color: rgba(0, 123, 40, 0.13);
+}
+
+.container {
+	max-width: 1300px;
+	
+	display: flex;
+	
+	margin: auto;
+	margin-top: 10%;
+}
+
+.right {
+    width: 250px;
+
+	padding: 10px;
+	margin: 20px;
+	margin-left: 3%;
+}
+
+.left  {
+	width: 660px;
+	
+	padding: 10px;
+	margin: 20px;
+	margin-left: 10%;
+	
+	float: left;
+}
+
+.input{
+	padding: 10px;
+	
+	border: none;
+	
+	position: relative;
+	top: 0.253px;
+}
+
+#addingline {
+	margin: 5px;
+	padding: 0px;
+	
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgba(0, 120, 140, 0.5);
+	border-radius: 4px;
+	
+	display: flex;
+}
+
+.inputline {
+	width: 80%;
+}
+
+.inputbutton {	
+	background-color: rgba(91, 142, 229, 1);
+	
+	color: white;
+	
+	width: 20%;
+	
+	box-shadow: 1px 2px 3px #ABCDEF inset; 
+}
+
+
+.product-item {
+	background-color: gray;
+	display: inline-block;
+	height: 50 px;
+	padding: 4px;
+	border-radius: 5px;
+	width: 100px;
+}
+
+.product-amount {
+	background-color: white;
+	border-radius: 10px;
+	
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	text-align: center;
 }
