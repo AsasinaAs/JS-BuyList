@@ -3,13 +3,17 @@
 	border-style: solid;
 	border-color: rgba(0, 120, 33, 0.1018);
 	border-radius: 4px;
-	box-shadow: 1px 2px 4px #ACB78E;
-	
+	box-shadow: 1px 2px 4px #a0a0a0;
 	background-color: white;
 }
 
 body {
-	background-color: rgba(0, 123, 40, 0.13);
+	background-color: rgba(34, 36, 38, 0.15);
+	
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: lighter;
+	letter-spacing: 0.7px;
 }
 
 .container {
@@ -18,23 +22,21 @@ body {
 	display: flex;
 	
 	margin: auto;
-	margin-top: 10%;
+	margin-top: 5%;
 }
 
 .right {
-    width: 250px;
+    width: 300px;
 
-	padding: 10px;
 	margin: 20px;
 	margin-left: 3%;
 }
 
 .left  {
-	width: 660px;
+	width: 780px;
 	
-	padding: 10px;
 	margin: 20px;
-	margin-left: 10%;
+	margin-left: 4%;
 	
 	float: left;
 }
@@ -49,13 +51,13 @@ body {
 }
 
 #addingline {
-	margin: 5px;
+	margin: 15px;
 	padding: 0px;
 	
 	border-style: solid;
 	border-width: 1px;
-	border-color: rgba(0, 120, 140, 0.5);
-	border-radius: 4px;
+	border-color: rgba(0,0,0, 0.16);
+	border-radius: 6px;
 	
 	display: flex;
 }
@@ -65,31 +67,78 @@ body {
 }
 
 .inputbutton {	
-	background-color: rgba(91, 142, 229, 1);
+	background-color: rgb(66, 134, 244);/* rgba(0,0,0,.6); /*rgba(0,0,0,0.05);*/
 	
 	color: white;
 	
 	width: 20%;
 	
-	box-shadow: 1px 2px 3px #ABCDEF inset; 
+	box-shadow: 2px 3px #77abff inset; 
+	
+	font-weight: bold;
 }
 
+.goods {
+	border-style: solid;
+	border-width: 1px;
+	border-top-color : rgba(0,0,0, 0.16);
+	border-right: none;
+	border-left: none;
+	border-bottom: none;
+	
+	margin: 0 px;
+	padding: 16px;
+}
+
+.types {
+	margin: 0 px;
+	padding: 15px;
+	
+	font-size: 18px;
+	font-weight: bold;
+	
+	border-style: solid;
+	border-width: 1px;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	border-bottom-color: rgba(0,0,0, 0.16);
+}
 
 .product-item {
-	background-color: gray;
 	display: inline-block;
-	height: 50 px;
-	padding: 4px;
-	border-radius: 5px;
-	width: 100px;
+	
+	font-size: 10px;
+	font-weight: bold;
+	color:  rgba(0,0,0,0.6);
+	
+	background-color: rgba(0,0,0,0.1);
+	
+	padding: 7px;
+	
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgba(0,0,0,0);
+	border-radius: 4px;
 }
 
-.product-amount {
-	background-color: white;
-	border-radius: 10px;
+.product-amount-left {
+	background-color: #d3651d;
 	
-	display: inline-block;
-	width: 20px;
-	height: 20px;
-	text-align: center;
+	color: white;
+	font-weight: normal;
+	
+	border-style: solid;
+	border-width: 1px;
+	border-color: #d3651d;
+	border-radius: 30px;
+	
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 2.5px;
+	padding-bottom: 2.5px;
+}
+
+.bottons {
+	
 }
