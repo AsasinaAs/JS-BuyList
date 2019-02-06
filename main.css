@@ -77,6 +77,10 @@ body {
 	font-weight: bold;
 }
 
+.inputbutton:hover{
+	background-color: #2185D0;
+}
+
 .goods {
 	border-style: solid;
 	border-width: 1px;
@@ -188,6 +192,10 @@ body {
 	font-weight: bold;
 }
 
+.delete:hover{
+	background-color: #ba1a1a;
+}
+
 .add {
 	margin-bottom: 0.5px;
 	background-color:  #21BA45;
@@ -205,6 +213,10 @@ body {
 	border-radius: 17px;
 	
 	font-weight: bold;
+}
+
+.add:hover{
+	background-color: #187f30;
 }
 
 .canbuttons{
@@ -232,6 +244,10 @@ body {
 	font-weight: 600;
 }
 
+.cancel:hover{
+	background-color: #ba1a1a;
+}
+
 .bought {
 	color: rgba(0,0,0,0.6);
 	background-color: rgba(0,0,0,0.05);
@@ -250,4 +266,8 @@ body {
 	font-weight: bold;
 	font-size: 10px;
 	
+}
+
+.bought:hover {
+	background-color: rgba(34,36,38,0.15);
 }
