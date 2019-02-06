@@ -8,10 +8,9 @@
 }
 
 body {
-	background-color: rgba(34, 36, 38, 0.15);
-	
+	background-color: #DADADA;
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 13px;
+	font-size: 15px;
 	font-weight: lighter;
 	letter-spacing: 0.7px;
 }
@@ -67,13 +66,13 @@ body {
 }
 
 .inputbutton {	
-	background-color: rgb(66, 134, 244);/* rgba(0,0,0,.6); /*rgba(0,0,0,0.05);*/
+	background-color: rgb(66, 134, 244);
 	
 	color: white;
 	
 	width: 20%;
 	
-	box-shadow: 2px 3px #77abff inset; 
+	box-shadow: 0px -0.3em 0px 0px rgba(34,36,38,0.15) inset;
 	
 	font-weight: bold;
 }
@@ -88,6 +87,8 @@ body {
 	
 	margin: 0 px;
 	padding: 16px;
+	
+	display: flex;
 }
 
 .types {
@@ -140,5 +141,113 @@ body {
 }
 
 .bottons {
+	margin-left: 35%;
+}
+
+.product {
+	width: 10px;
+	margin: 5px;
+}
+
+.product-amount {
+	color: rgba(0,0,0,.6);
+	
+	background-color: #E8E8E8;
+	
+	margin: 4px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	padding-left: 12px;
+	padding-right: 7px;
+	
+	border-width: 1px;
+	border-style: solid;
+	border-color: white;
+	border-radius: 6px;
+	
+	font-weight: 600;
+}
+
+.delete {
+	margin-bottom: 0.5px;
+	background-color: #DB2828;
+    color: #FFF;
+	box-shadow: 0px -0.3em 0px 0px rgba(34,36,38,0.15) inset;
+	
+	padding-top: 7px;
+	padding-bottom: 7px;
+	padding-left: 11px;
+	padding-right: 11px;
+	
+	
+	border-width: 1px;
+	border-style: solid;
+	border-color: white;
+	border-radius: 17px;
+	
+	font-weight: bold;
+}
+
+.add {
+	margin-bottom: 0.5px;
+	background-color:  #21BA45;
+    color: #FFF;
+	box-shadow: 0px -0.3em 0px 0px rgba(34,36,38,0.15) inset;
+	
+	padding-top: 7px;
+	padding-bottom: 7px;
+	padding-left: 11px;
+	padding-right: 11px;
+	
+	border-width: 1px;
+	border-style: solid;
+	border-color: white;
+	border-radius: 17px;
+	
+	font-weight: bold;
+}
+
+.canbuttons{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	margin-left: 30%;
+}
+
+.cancel {
+	background-color: #DB2828;
+	color: white;
+	box-shadow: 0px -0.3em 0px 0px rgba(34,36,38,0.15) inset;
+	
+	padding-top: 9px;
+	padding-bottom: 9px;
+	padding-left: 13px;
+	padding-right: 13px;
+
+	border-width: 1px;
+	border-style: solid;
+	border-color: white;
+	border-radius: 6px;
+	
+	font-weight: 600;
+}
+
+.bought {
+	color: rgba(0,0,0,0.6);
+	background-color: rgba(0,0,0,0.05);
+	box-shadow: 0px -0.2em 0px 0px rgba(34,36,38,0.15) inset;
+	
+	border-width: 0.9px;
+	border-style: solid;
+	border-color: rgba(0,0,0,0.25);
+	border-radius: 4px;
+	
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 23px;
+	padding-right: 23px;
+	
+	font-weight: bold;
+	font-size: 10px;
 	
 }
