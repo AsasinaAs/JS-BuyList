@@ -12,22 +12,22 @@
 	      <div class="left column"> 
 		        <div id="addingline">
 		            <input type="text" placeholder="Назва товару" name="addline" class="input inputline">
-			        <button class="input inputbutton">Додати</button>
+					   <button class="input inputbutton" data-tooltip="Create product">Додати </button>
 				</div>
 				<div class="goods">
 				    <span class="product">
 				    Огірки 
 					</span>
 					<div class="bottons">
-					    <button class="delete">&#8211;</button>
+					    <button class="delete" data-tooltip="Delete one">&#8211;</button>
 					    <span class="product-amount">
 	            	       3
 	            	    </span>
-					    <button class="add">&plus;</button>
+					    <button class="add" data-tooltip="Add one">&plus;</button>
 					</div>
 					<div class="canbuttons">
-					    <button class="bought">Куплено</button>
-						<button class="cancel">&#215;</button>
+					    <button class="bought" data-tooltip="Product is bought">Куплено</button>
+						<button class="cancel" data-tooltip="Delete product from the list">&#215;</button>
 					</div>
 				</div>
 				<div class="goods">
@@ -35,15 +35,15 @@
 				    Молоко 
 					</span>
 					<div class="bottons">
-				       	<button class="delete">&#8211;</button>
+				       	<button class="delete" data-tooltip="Delete one">&#8211;</button>
 				     	<span class="product-amount">
 	                	   3
 	            	    </span>
-					    <button class="add">&plus;</button>
+					    <button class="add" data-tooltip="Add one">&plus;</button>
 					</div>
 					<div class="canbuttons">
-					    <button class="bought">Куплено</button>
-						<button class="cancel">&#215;</button>
+					    <button class="bought" data-tooltip="Product is bought">Куплено</button>
+						<button class="cancel" data-tooltip="Delete product from the list">&#215;</button>
 					</div>
 				</div>
 				<div class="goods">
@@ -51,15 +51,15 @@
 				    Цукерки
                     </span>					
 					<div class="bottons">
-					    <button class="delete">&#8211;</button>
+					    <button class="delete" data-tooltip="Delete one">&#8211;</button>
 					    <span class="product-amount">
 	            	       3
 	                 	</span>
-				    	<button class="add">&plus;</button>
+				    	<button class="add" data-tooltip="Add one">&plus;</button>
 					</div>
 					<div class="canbuttons">
-					    <button class="bought">Куплено</button>
-						<button class="cancel">&#215;</button>
+					    <button class="bought" data-tooltip="Product is bought">Куплено</button>
+						<button class="cancel" data-tooltip="Delete product from the list">&#215;</button>
 					</div>
 				</div>
 		  </div>
@@ -91,6 +91,11 @@
 				    Куплено
                 </div>				
 		  </div>
+	</div>
+	<div id="bage">
+	   <p id="buylist">Buy List</p>
+	   <p class="created">Created by:</p>
+	   <p class="sname">Fedchuk Anastasia</p>
 	</div>
 </body>
 </html>

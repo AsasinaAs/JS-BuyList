@@ -17,29 +17,43 @@ body {
 
 .container {
 	max-width: 1300px;
-	
 	display: flex;
 	
 	margin: auto;
 	margin-top: 5%;
 }
-
+@media (max-width: 800px){
+	.container{
+		display: flex;
+		flex-direction: column; 
+		flex-wrap: wrap;
+	}
+}
 .right {
-    width: 300px;
+    width: 30%;
 
 	margin: 20px;
 	margin-left: 3%;
 }
-
+@media (max-width: 800px){
+	.right{
+		width: 93%;
+		margin-left: 4%;
+	}
+}
 .left  {
-	width: 780px;
+	width: 68%;
 	
 	margin: 20px;
 	margin-left: 4%;
 	
 	float: left;
 }
-
+@media (max-width: 800px){
+	.left{
+		width: 93%;
+	}
+}
 .input{
 	padding: 10px;
 	
@@ -90,7 +104,7 @@ body {
 	border-bottom: none;
 	
 	margin: 0 px;
-	padding: 16px;
+	padding: 1.2%;
 	
 	display: flex;
 }
@@ -120,11 +134,13 @@ body {
 	background-color: rgba(0,0,0,0.1);
 	
 	padding: 7px;
+	margin: 1px;
 	
 	border-style: solid;
 	border-width: 1px;
 	border-color: rgba(0,0,0,0);
 	border-radius: 4px;
+	
 }
 
 .product-amount-left {
@@ -145,12 +161,15 @@ body {
 }
 
 .bottons {
-	margin-left: 35%;
+	position: relative;
+	left: 30%;
+	
+	display: flex;
 }
 
 .product {
-	width: 10px;
-	margin: 5px;
+	width: 1%;
+	margin: 0.5%;
 }
 
 .product-amount {
@@ -158,13 +177,13 @@ body {
 	
 	background-color: #E8E8E8;
 	
-	margin: 4px;
-	padding-top: 7px;
-	padding-bottom: 7px;
-	padding-left: 12px;
-	padding-right: 7px;
+	margin: 0.7%;
+	padding-top: 9%;
+	padding-bottom: 7%;
+	padding-left: 14%;
+	padding-right: 15%;
 	
-	border-width: 1px;
+	border-width: 2%;
 	border-style: solid;
 	border-color: white;
 	border-radius: 6px;
@@ -173,7 +192,6 @@ body {
 }
 
 .delete {
-	margin-bottom: 0.5px;
 	background-color: #DB2828;
     color: #FFF;
 	box-shadow: 0px -0.3em 0px 0px rgba(34,36,38,0.15) inset;
@@ -220,10 +238,14 @@ body {
 }
 
 .canbuttons{
+	position: relative;
+	left: calc(90% - 11.3em);
+	
 	margin-top: 0px;
 	margin-bottom: 0px;
 	margin-right: 0px;
-	margin-left: 30%;
+	
+	display: flex;
 }
 
 .cancel {
@@ -266,8 +288,104 @@ body {
 	font-weight: bold;
 	font-size: 10px;
 	
+	
 }
 
 .bought:hover {
 	background-color: rgba(34,36,38,0.15);
+}
+
+#bage{
+	position: fixed;
+	bottom: -60px;
+	left: 25px;
+	
+	padding-left: 10px;
+	padding-right: 10px;
+	
+	background-color: blueviolet;
+	border-width: 0.9px;
+	border-style: solid;
+	border-color: blueviolet;
+	border-radius: 4px;
+	color: white;
+	
+	transition:	all	1s	ease;
+}
+
+#bage:hover{
+	bottom: -8px;
+	background-color: blue;
+}
+
+#buylist{
+	font-size: 18px;
+	font-weight: 600;
+	position: relative;
+	left: 30px;
+} 
+.created{
+	position: relative;
+	top: 10px;
+	font-size: 10px;
+}
+@media	print{
+	#buylist{
+       visibility: hidden;
+	   height: 0;	   
+    }
+	#bage{
+		height: 60px;
+		width: 150px;
+		bottom: -12px;
+		color: black;
+		padding: 2px;
+	}
+	.created{
+		position: absolute;
+		top: 2px;
+		left: 5px;
+		z-index: 3;	   
+	}
+	.sname{
+		position: absolute;
+		top: 13px;
+		left: 5px;
+	}
+} 
+
+[data-tooltip] {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+
+[data-tooltip]:before,
+[data-tooltip]:after {
+  visibility: hidden;
+  opacity: 0;
+}
+
+[data-tooltip]:before {
+  position: absolute;
+  bottom: 40%;
+  left: 50%;
+  margin-bottom: 5px;
+  margin-left: -40px;
+  padding: 7px;
+  width: 70px;
+  border-radius: 6px;
+  background-color: blueviolet;
+  color: white;
+  content: attr(data-tooltip);
+  text-align: center;
+  font-size: 8px;
+}
+
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+  visibility: visible;
+  transform:  translateY(-24px)scale(1.4);
+  opacity: 1;
+  transition:	all	1s	ease;
 }
