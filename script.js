@@ -27,6 +27,8 @@ $(function(){
 			{
 				var name = $('#name_of_product').val();
 				$clone1.find('.product').text(name);
+				$clone2.find('.p_item').text(name);
+				productName = name;
 			});
 		});
 		
@@ -143,6 +145,8 @@ $(function(){
 	$sweets.show();
 	$sweets_amount.show();
 	
+	var cucumber = 'Огірок';
+	
 	$cucumber.find('.add').click(function()
 	{
 			if(amount==1)
@@ -158,12 +162,14 @@ $(function(){
 	$cucumber.find('.product').click(function()
 		{
 			$cucumber.find('.product').html('<input type="textfield" id="name_of_product_c"></input>');
-			$("#name_of_product_c").val('Огірок');
+			$("#name_of_product_c").val(cucumber);
 			$('#name_of_product_c').focus();
 			$('#name_of_product_c').focusout(function()
 			{
 				var name = $('#name_of_product_c').val();
 				$cucumber.find('.product').text(name);
+				$cucumber_amount.find('.p_item').text(name);
+				cucumber = name;
 			});
 		});
 	
@@ -231,6 +237,9 @@ $(function(){
 			}
 		});
 	
+	
+	var milk = 'Молоко';
+	
 	$milk.find('.add').click(function()
 	{
 			if(amount_of_milk==1)
@@ -246,12 +255,14 @@ $(function(){
 		$milk.find('.product').click(function()
 		{
 			$milk.find('.product').html('<input type="textfield" id="name_of_product_m"></input>');
-			$("#name_of_product_m").val('Молоко');
+			$("#name_of_product_m").val(milk);
 			$('#name_of_product_m').focus();
 			$('#name_of_product_m').focusout(function()
 			{
 				var name = $('#name_of_product_m').val();
 				$milk.find('.product').text(name);
+				$milk_amount.find('.p_item').text(name);
+				milk = name;
 			});
 		});
 		
@@ -319,6 +330,8 @@ $(function(){
 			}
 		});
 	
+	var sweets = 'Цукерки';
+	
 	$sweets.find('.add').click(function()
 	{
 			if(amount_of_sweets==1)
@@ -334,12 +347,14 @@ $(function(){
 		$sweets.find('.product').click(function()
 		{
 			$sweets.find('.product').html('<input type="textfield" id="name_of_product_s"></input>');
-			$("#name_of_product_s").val('Цукерки');
+			$("#name_of_product_s").val(sweets);
 			$('#name_of_product_s').focus();
 			$('#name_of_product_s').focusout(function()
 			{
 				var name = $('#name_of_product_s').val();
 				$sweets.find('.product').text(name);
+				$sweets_amount.find('.p_item').text(name);
+				sweets = name;
 			});
 		});
 	
